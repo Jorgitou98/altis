@@ -4,7 +4,7 @@ import random
 import sys
 
 if len(sys.argv) != 4:
-    print "Usage: generate.py <rows> <dimensions> <centers>"
+    print ("Usage: generate.py <rows> <dimensions> <centers>")
     sys.exit(1)
 
 numRow    = int(sys.argv[1])
@@ -17,10 +17,10 @@ if 0:
     # uniform random
     rows = []
     for row in range(1, numRow+1):
-        print row,
+        print (row, end =" ")
         for dim in range(numDim):
-            print random.random(),
-        print
+            print (random.random(), end =" ")
+        print()
 
 else:
     # clustered random using gaussian
@@ -33,9 +33,9 @@ else:
     sigma = (1. / numCenter) ** 3
     for row in range(1, numRow+1):
         center = random.choice(centers)
-        print row,
+        print (row, end =" ")
         for dim in range(numDim):
             noise = random.gauss(0, sigma)
-            print center[dim] + noise,
-        print
+            print (center[dim] + noise, end =" ")
+        print()
     

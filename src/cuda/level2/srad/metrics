@@ -1,0 +1,6 @@
+test, atts, units, median, mean, stddev, min, max, 
+srad_kernel_time, img:16384,speckle:8192,iter:40, sec, 6.4309, 6.32154, 0.623444, 4.35947, 6.99674, 
+srad_parity, img:16384,speckle:8192,iter:40, N, 3.49456e-05, 3.59163e-05, 6.3568e-06, 3.08955e-05, 5.84877e-05, 
+srad_total_time, img:16384,speckle:8192,iter:40, sec, 6.43112, 6.32176, 0.623438, 4.35973, 6.99696, 
+srad_transfer_time, img:16384,speckle:8192,iter:40, sec, 0.00022016, 0.000223366, 1.21174e-05, 0.00020992, 0.000254976, 
+

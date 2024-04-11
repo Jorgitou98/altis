@@ -1,1 +1,1 @@
-./mandelbrot -s 5 --passes 15 --uvm
+./mandelbrot -s 5 --passes 5 --uvm

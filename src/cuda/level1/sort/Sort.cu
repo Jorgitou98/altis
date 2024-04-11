@@ -269,6 +269,7 @@ void RunBenchmark(ResultDatabase &resultDB, OptionParser &op) {
     checkCudaErrors(cudaEventSynchronize(stop));
     checkCudaErrors(cudaEventElapsedTime(&elapsedTime, start, stop));
     double kernelTime = elapsedTime * 1.e-3;
+    printf("Tiempo del kernel: %d", kernelTime)
     // Readback data from device
     checkCudaErrors(cudaEventRecord(start, 0));
 

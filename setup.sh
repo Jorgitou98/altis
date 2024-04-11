@@ -43,4 +43,21 @@ cd $SCRIPTPATH
 mkdir build
 cd build
 cmake -DCMAKE_CUDA_ARCHITECTURES=$($SCRIPTPATH/config/get_cuda_sm.sh) ..
-make -j`nproc`
+make -k -j`nproc`
+pwd
+
+levels=("level0" "level1" "level2")
+for level in "${levels[@]}"; do
+	cd "bin/$level"
+	for archivo in *; do
+		if [ -f "$archivo" ]; then
+			mv "$archivo" "../../../src/cuda/$level/$archivo/"
+		fi
+	done
+	cd "../.."
+done
+
+mv "bin/level2/cfd_double" "../src/cuda/level2/cfd"
+mv "bin/level2/particlefilter_float" "../src/cuda/level2/particlefilter"
+mv "bin/level2/particlefilter_naive" "../src/cuda/level2/particlefilter"
+mv "../src/cuda/level2/raytracing/raytracing" "../src/cuda/level2/raytracing/raytracing_cuda/raytracing"

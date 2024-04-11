@@ -1,0 +1,7 @@
+level2:
+
+fdtd2d: No hay ningún run con parámetros por defecto para su ejecución ni un README ni nada que indique que parametros recibe y su significado.
+
+particle_filter: El run de particle filter no coincide con la implementación, pasa una dimensión z cuando la solución es para 2d. Quitandola y aumentando
+los valores de las dimensiones x, y, incluso el número de puntos np los tiempos son muy pequeños. Descarto el bench.
+

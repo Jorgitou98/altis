@@ -1,0 +1,5 @@
+test, atts, units, median, mean, stddev, min, max, 
+cfd_kernel_time, numelements:60000000, sec, 0.619311, 0.619311, 0, 0.619311, 0.619311, 
+cfd_parity, numelements:60000000, N, 0.698992, 0.698992, 0, 0.698992, 0.698992, 
+cfd_transfer_time, numelements:60000000, sec, 0.432893, 0.432893, 0, 0.432893, 0.432893, 
+
