@@ -1,3 +1,3 @@
 #!/bin/sh
-
-./where --uvm --passes 30 -s 5 -m metrics
+set -u
+./where --uvm --passes 30 -s 5 -m where_$1.csv

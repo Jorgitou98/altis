@@ -5,3 +5,5 @@ fdtd2d: No hay ningún run con parámetros por defecto para su ejecución ni un 
 particle_filter: El run de particle filter no coincide con la implementación, pasa una dimensión z cuando la solución es para 2d. Quitandola y aumentando
 los valores de las dimensiones x, y, incluso el número de puntos np los tiempos son muy pequeños. Descarto el bench.
 
+yolo: No está en el paper, pero dentro tiene todos las apps de la sección de deep lerning. No se construye con el setup.sh, tampoco tiene runs ni nada
+para saber con qué parámetros ejecutarlo por defecto.

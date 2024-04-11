@@ -1,2 +1,4 @@
+#!/bin/sh
+set -u
 ./cfd -s 4 -n 1 -m metrics -m cfd_$1.csv
 ./cfd_double -s 4 -n 1 -m cfddouble_$1.csv

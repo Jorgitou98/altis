@@ -1,3 +1,3 @@
 #!/bin/sh
-
-./srad -s 5 --passes 15 --uvm -m metrics
+set -u
+./srad -s 5 --passes 15 --uvm -m srad_$1.csv
